@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var text2: UITextField!
     
     @IBAction func theButton(_ sender: Any) {
-        print(text1.text!)
-        print(text2.text!)
+    
+        theLabel.text = "Answer: \(Int(text1.text!)! + Int(text2.text!)!)"
     }
     
     override func viewDidLoad() {
