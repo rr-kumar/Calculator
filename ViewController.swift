@@ -17,24 +17,31 @@ class ViewController: UIViewController {
     @IBOutlet weak var text2: UITextField!
     
     @IBAction func theButton(_ sender: Any) {
-    
-        theLabel.text = "Answer: \(Int(text1.text!)! + Int(text2.text!)!)"
+        
+        let addition:Bool = false
+        
+        if addition {
+            
+            theLabel.text = "Answer: \(Int(text1.text!)! + Int(text2.text!)!)"
+        }else{
+            theLabel.text = "Answer: \(Int(text1.text!)! - Int(text2.text!)!)"
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
         
         self.view.backgroundColor = UIColor.lightGray
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
         
-      
+        
     }
-
-
+    
+    
 }
 
