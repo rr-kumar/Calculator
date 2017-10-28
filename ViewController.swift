@@ -17,11 +17,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var text2: UITextField!
     
     @IBAction func theButton(_ sender: Any) {
+        print(text1.text!)
+        print(text2.text!)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
         
         self.view.backgroundColor = UIColor.lightGray
     }
@@ -29,6 +31,8 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+      
     }
 
 
